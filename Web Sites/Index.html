@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Incluir Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Asteroid Visualizer con Interacción</title>
+  </head>
+<body>
+
+<div id="left">
+  <h2>Visualizador De Asteroide</h2>
+     <div class="color-key">
+    <h3>El color del asteroide depende de su proximidad:</h3>
+<div class="color-key">
+  <h3>El color del asteroide depende de su proximidad:</h3>
+  <ul>
+    <li>
+      <span class="color-icon icon-red"><i class="fas fa-circle"></i></span>
+      Muy cerca → <strong>Rojo</strong>
+    </li>
+    <li>
+      <span class="color-icon icon-orange"><i class="fas fa-circle"></i></span>
+      Medio → <strong>Naranja</strong>
+    </li>
+    <li>
+      <span class="color-icon icon-yellow"><i class="fas fa-circle"></i></span>
+      Lejos → <strong>Amarillo</strong>
+    </li>
+  </ul>
+</div>
+  </div>
+    Al seleccionar uno, el panel derecho mostrará:
+Los asteroides se posicionan visualmente más lejos o más cerca según su distancia real.
+
+<button class="neo-button" onclick="window.open('https://api.nasa.gov/', '_blank')">
+  <i class="fas fa-rocket"></i> API De La NASA
+</button>
+
+<button class="neo-button" onclick="window.open('https://github.com/tu_usuario/tu_repositorio', '_blank')">
+  <i class="fab fa-github"></i> GitHub del Código
+</button>
+  <button id="load">Cargar asteroides</button>
+</div>
+
+
+
+  <div id="center">
+    <canvas id="canvas" width="600" height="600"></canvas>
+  </div>
+
+  <div id="right">
+    <h3>Detalles</h3>
+    <div id="info">Selecciona un asteroide...</div>
+  </div>
+
+  
+</body>
+</html>
